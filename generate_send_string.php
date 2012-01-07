@@ -8,14 +8,14 @@ $keys = $possibleKeys;
 
 $workingkeys = array();
 $e=0;
-$validKey = djb($keys[0]);
+$validKey = djbx33a($keys[0]);
 foreach($keys as $key) {
-  if ($validKey == djb($key)) {
+  if ($validKey == djbx33a($key)) {
     $workingkeys[] = $key;
   } else {
     $e++;
   }
-  echo "$key => ".djb($key)."\n";
+  echo "$key => ".djbx33a($key)."\n";
 
 }
 

@@ -1,5 +1,5 @@
 <?php
-function djb($str) {
+function djbx33a($str) {
   $h = 5381;
   $strlen = mb_strlen($str);
   for($i = 0; $i < $strlen; $i++ ) {
