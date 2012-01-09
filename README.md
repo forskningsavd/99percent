@@ -1,4 +1,12 @@
-## hash collision attack Proof of Concept
+# poc hash collition attacking php using python
 
-poc implemented in different languages, targetting php.
-one branch for each language.
+first: generate query string
+
+    python generate.py
+
+second attack
+
+    python attack.py http://example.com/index.php
+
+### note: this is not effective against servers using sushin patch.. :(
+
